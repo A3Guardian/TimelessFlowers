@@ -1,176 +1,1020 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<title> Timeless Flowers </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+<body>
 
-        <!-- Styles / Scripts -->
-        @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-            @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @else
-            <style>
-                /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Figtree,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.-bottom-16{bottom:-4rem}.-left-16{left:-4rem}.-left-20{left:-5rem}.top-0{top:0}.z-0{z-index:0}.\!row-span-1{grid-row:span 1 / span 1!important}.-mx-3{margin-left:-.75rem;margin-right:-.75rem}.-ml-px{margin-left:-1px}.ml-3{margin-left:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.\!hidden{display:none!important}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.size-12{width:3rem;height:3rem}.size-5{width:1.25rem;height:1.25rem}.size-6{width:1.5rem;height:1.5rem}.h-12{height:3rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-5{width:1.25rem}.w-\[calc\(100\%_\+_8rem\)\]{width:calc(100% + 8rem)}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-\[877px\]{max-width:877px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-default{cursor:default}.resize{resize:both}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.\!flex-row{flex-direction:row!important}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-items-center{justify-items:center}.gap-2{gap:.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.rounded-\[10px\]{border-radius:10px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-sm{border-radius:.125rem}.rounded-l-md{border-top-left-radius:.375rem;border-bottom-left-radius:.375rem}.rounded-r-md{border-top-right-radius:.375rem;border-bottom-right-radius:.375rem}.border{border-width:1px}.border-gray-300{--tw-border-opacity: 1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-\[\#FF2D20\]\/10{background-color:#ff2d201a}.bg-gray-50{--tw-bg-opacity: 1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from: transparent var(--tw-gradient-from-position);--tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-white{--tw-gradient-to: #fff var(--tw-gradient-to-position)}.to-zinc-900{--tw-gradient-to: #18181b var(--tw-gradient-to-position)}.stroke-\[\#FF2D20\]{stroke:#ff2d20}.object-cover{-o-object-fit:cover;object-fit:cover}.object-top{-o-object-position:top;object-position:top}.p-6{padding:1.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.pt-3{padding-top:.75rem}.text-center{text-align:center}.font-sans{font-family:Figtree,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}.text-sm{font-size:.875rem;line-height:1.25rem}.text-sm\/relaxed{font-size:.875rem;line-height:1.625}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-5{line-height:1.25rem}.text-black{--tw-text-opacity: 1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-black\/50{color:#00000080}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0px_14px_34px_0px_rgba\(0\,0\,0\,0\.08\)\]{--tw-shadow: 0px 14px 34px 0px rgba(0,0,0,.08);--tw-shadow-colored: 0px 14px 34px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.ring-black{--tw-ring-opacity: 1;--tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity, 1))}.ring-gray-300{--tw-ring-opacity: 1;--tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity, 1))}.ring-transparent{--tw-ring-color: transparent}.ring-white{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1))}.ring-white\/\[0\.05\]{--tw-ring-color: rgb(255 255 255 / .05)}.drop-shadow-\[0px_4px_34px_rgba\(0\,0\,0\,0\.06\)\]{--tw-drop-shadow: drop-shadow(0px 4px 34px rgba(0,0,0,.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0px_4px_34px_rgba\(0\,0\,0\,0\.25\)\]{--tw-drop-shadow: drop-shadow(0px 4px 34px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-150{transition-duration:.15s}.duration-300{transition-duration:.3s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.selection\:bg-\[\#FF2D20\] *::-moz-selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:bg-\[\#FF2D20\] *::selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:text-white *::-moz-selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-\[\#FF2D20\]::-moz-selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:bg-\[\#FF2D20\]::selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:text-white::-moz-selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-black:hover{--tw-text-opacity: 1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.hover\:text-black\/70:hover{color:#000000b3}.hover\:text-gray-400:hover{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.hover\:text-gray-500:hover{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.hover\:ring-black\/20:hover{--tw-ring-color: rgb(0 0 0 / .2)}.focus\:z-10:focus{z-index:10}.focus\:border-blue-300:focus{--tw-border-opacity: 1;border-color:rgb(147 197 253 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring:focus{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.focus-visible\:ring-1:focus-visible{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity, 1))}.active\:bg-gray-100:active{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.active\:text-gray-500:active{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.active\:text-gray-700:active{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:size-16{width:4rem;height:4rem}.sm\:size-6{width:1.5rem;height:1.5rem}.sm\:flex-1{flex:1 1 0%}.sm\:items-center{align-items:center}.sm\:justify-between{justify-content:space-between}.sm\:pt-5{padding-top:1.25rem}}@media (min-width: 768px){.md\:row-span-3{grid-row:span 3 / span 3}}@media (min-width: 1024px){.lg\:col-start-2{grid-column-start:2}.lg\:h-16{height:4rem}.lg\:max-w-7xl{max-width:80rem}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:flex-col{flex-direction:column}.lg\:items-end{align-items:flex-end}.lg\:justify-center{justify-content:center}.lg\:gap-8{gap:2rem}.lg\:p-10{padding:2.5rem}.lg\:pb-10{padding-bottom:2.5rem}.lg\:pt-0{padding-top:0}.lg\:text-\[\#FF2D20\]{--tw-text-opacity: 1;color:rgb(255 45 32 / var(--tw-text-opacity, 1))}}.rtl\:flex-row-reverse:where([dir=rtl],[dir=rtl] *){flex-direction:row-reverse}@media (prefers-color-scheme: dark){.dark\:block{display:block}.dark\:hidden{display:none}.dark\:border-gray-600{--tw-border-opacity: 1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.dark\:bg-black{--tw-bg-opacity: 1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.dark\:bg-zinc-900{--tw-bg-opacity: 1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.dark\:via-zinc-900{--tw-gradient-to: rgb(24 24 27 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to)}.dark\:to-zinc-900{--tw-gradient-to: #18181b var(--tw-gradient-to-position)}.dark\:text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.dark\:text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:text-white\/50{color:#ffffff80}.dark\:text-white\/70{color:#ffffffb3}.dark\:ring-zinc-800{--tw-ring-opacity: 1;--tw-ring-color: rgb(39 39 42 / var(--tw-ring-opacity, 1))}.dark\:hover\:text-gray-300:hover{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.dark\:hover\:text-white:hover{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:hover\:text-white\/70:hover{color:#ffffffb3}.dark\:hover\:text-white\/80:hover{color:#fffc}.dark\:hover\:ring-zinc-700:hover{--tw-ring-opacity: 1;--tw-ring-color: rgb(63 63 70 / var(--tw-ring-opacity, 1))}.dark\:focus\:border-blue-700:focus{--tw-border-opacity: 1;border-color:rgb(29 78 216 / var(--tw-border-opacity, 1))}.dark\:focus\:border-blue-800:focus{--tw-border-opacity: 1;border-color:rgb(30 64 175 / var(--tw-border-opacity, 1))}.dark\:focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity, 1))}.dark\:focus-visible\:ring-white:focus-visible{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1))}.dark\:active\:bg-gray-700:active{--tw-bg-opacity: 1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.dark\:active\:text-gray-300:active{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}}
-            </style>
-        @endif
-    </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-        <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
-            <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background" />
-            <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
-                <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-                    <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
-                        <div class="flex lg:justify-center lg:col-start-2">
-                            <svg class="h-12 w-auto text-white lg:h-16 lg:text-[#FF2D20]" viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M61.8548 14.6253C61.8778 14.7102 61.8895 14.7978 61.8897 14.8858V28.5615C61.8898 28.737 61.8434 28.9095 61.7554 29.0614C61.6675 29.2132 61.5409 29.3392 61.3887 29.4265L49.9104 36.0351V49.1337C49.9104 49.4902 49.7209 49.8192 49.4118 49.9987L25.4519 63.7916C25.3971 63.8227 25.3372 63.8427 25.2774 63.8639C25.255 63.8714 25.2338 63.8851 25.2101 63.8913C25.0426 63.9354 24.8666 63.9354 24.6991 63.8913C24.6716 63.8838 24.6467 63.8689 24.6205 63.8589C24.5657 63.8389 24.5084 63.8215 24.456 63.7916L0.501061 49.9987C0.348882 49.9113 0.222437 49.7853 0.134469 49.6334C0.0465019 49.4816 0.000120578 49.3092 0 49.1337L0 8.10652C0 8.01678 0.0124642 7.92953 0.0348998 7.84477C0.0423783 7.8161 0.0598282 7.78993 0.0697995 7.76126C0.0884958 7.70891 0.105946 7.65531 0.133367 7.6067C0.152063 7.5743 0.179485 7.54812 0.20192 7.51821C0.230588 7.47832 0.256763 7.43719 0.290416 7.40229C0.319084 7.37362 0.356476 7.35243 0.388883 7.32751C0.425029 7.29759 0.457436 7.26518 0.498568 7.2415L12.4779 0.345059C12.6296 0.257786 12.8015 0.211853 12.9765 0.211853C13.1515 0.211853 13.3234 0.257786 13.475 0.345059L25.4531 7.2415H25.4556C25.4955 7.26643 25.5292 7.29759 25.5653 7.32626C25.5977 7.35119 25.6339 7.37362 25.6625 7.40104C25.6974 7.43719 25.7224 7.47832 25.7523 7.51821C25.7735 7.54812 25.8021 7.5743 25.8196 7.6067C25.8483 7.65656 25.8645 7.70891 25.8844 7.76126C25.8944 7.78993 25.9118 7.8161 25.9193 7.84602C25.9423 7.93096 25.954 8.01853 25.9542 8.10652V33.7317L35.9355 27.9844V14.8846C35.9355 14.7973 35.948 14.7088 35.9704 14.6253C35.9792 14.5954 35.9954 14.5692 36.0053 14.5405C36.0253 14.4882 36.0427 14.4346 36.0702 14.386C36.0888 14.3536 36.1163 14.3274 36.1375 14.2975C36.1674 14.2576 36.1923 14.2165 36.2272 14.1816C36.2559 14.1529 36.292 14.1317 36.3244 14.1068C36.3618 14.0769 36.3942 14.0445 36.4341 14.0208L48.4147 7.12434C48.5663 7.03694 48.7383 6.99094 48.9133 6.99094C49.0883 6.99094 49.2602 7.03694 49.4118 7.12434L61.3899 14.0208C61.4323 14.0457 61.4647 14.0769 61.5021 14.1055C61.5333 14.1305 61.5694 14.1529 61.5981 14.1803C61.633 14.2165 61.6579 14.2576 61.6878 14.2975C61.7103 14.3274 61.7377 14.3536 61.7551 14.386C61.7838 14.4346 61.8 14.4882 61.8199 14.5405C61.8312 14.5692 61.8474 14.5954 61.8548 14.6253ZM59.893 27.9844V16.6121L55.7013 19.0252L49.9104 22.3593V33.7317L59.8942 27.9844H59.893ZM47.9149 48.5566V37.1768L42.2187 40.4299L25.953 49.7133V61.2003L47.9149 48.5566ZM1.99677 9.83281V48.5566L23.9562 61.199V49.7145L12.4841 43.2219L12.4804 43.2194L12.4754 43.2169C12.4368 43.1945 12.4044 43.1621 12.3682 43.1347C12.3371 43.1097 12.3009 43.0898 12.2735 43.0624L12.271 43.0586C12.2386 43.0275 12.2162 42.9888 12.1887 42.9539C12.1638 42.9203 12.1339 42.8916 12.114 42.8567L12.1127 42.853C12.0903 42.8156 12.0766 42.7707 12.0604 42.7283C12.0442 42.6909 12.023 42.656 12.013 42.6161C12.0005 42.5688 11.998 42.5177 11.9931 42.4691C11.9881 42.4317 11.9781 42.3943 11.9781 42.3569V15.5801L6.18848 12.2446L1.99677 9.83281ZM12.9777 2.36177L2.99764 8.10652L12.9752 13.8513L22.9541 8.10527L12.9752 2.36177H12.9777ZM18.1678 38.2138L23.9574 34.8809V9.83281L19.7657 12.2459L13.9749 15.5801V40.6281L18.1678 38.2138ZM48.9133 9.14105L38.9344 14.8858L48.9133 20.6305L58.8909 14.8846L48.9133 9.14105ZM47.9149 22.3593L42.124 19.0252L37.9323 16.6121V27.9844L43.7219 31.3174L47.9149 33.7317V22.3593ZM24.9533 47.987L39.59 39.631L46.9065 35.4555L36.9352 29.7145L25.4544 36.3242L14.9907 42.3482L24.9533 47.987Z" fill="currentColor"/></svg>
-                        </div>
-                        @if (Route::has('login'))
-                            <nav class="-mx-3 flex flex-1 justify-end">
-                                @auth
-                                    <a
-                                        href="{{ url('/dashboard') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Dashboard
-                                    </a>
-                                @else
-                                    <a
-                                        href="{{ route('login') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Log in
-                                    </a>
+<header>
 
-                                    @if (Route::has('register'))
-                                        <a
-                                            href="{{ route('register') }}"
-                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                        >
-                                            Register
-                                        </a>
-                                    @endif
-                                @endauth
-                            </nav>
-                        @endif
-                    </header>
+	<input type="checkbox" name="" id="toggler">
+	<label for="toggler" class="fas fa-bars"> </label>
 
-                    <main class="mt-6">
-                        <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
-                            <a
-                                href="https://laravel.com/docs"
-                                id="docs-card"
-                                class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div id="screenshot-container" class="relative flex w-full flex-1 items-stretch">
-                                    <img
-                                        src="https://laravel.com/assets/img/welcome/docs-light.svg"
-                                        alt="Laravel documentation screenshot"
-                                        class="aspect-video h-full w-full flex-1 rounded-[10px] object-top object-cover drop-shadow-[0px_4px_34px_rgba(0,0,0,0.06)] dark:hidden"
-                                        onerror="
-                                            document.getElementById('screenshot-container').classList.add('!hidden');
-                                            document.getElementById('docs-card').classList.add('!row-span-1');
-                                            document.getElementById('docs-card-content').classList.add('!flex-row');
-                                            document.getElementById('background').classList.add('!hidden');
-                                        "
-                                    />
-                                    <img
-                                        src="https://laravel.com/assets/img/welcome/docs-dark.svg"
-                                        alt="Laravel documentation screenshot"
-                                        class="hidden aspect-video h-full w-full flex-1 rounded-[10px] object-top object-cover drop-shadow-[0px_4px_34px_rgba(0,0,0,0.25)] dark:block"
-                                    />
-                                    <div
-                                        class="absolute -bottom-16 -left-16 h-40 w-[calc(100%_+_8rem)] bg-gradient-to-b from-transparent via-white to-white dark:via-zinc-900 dark:to-zinc-900"
-                                    ></div>
-                                </div>
+	<a href="#" class="logo"> Timeless Flowers<span>.</span> </a>
 
-                                <div class="relative flex items-center gap-6 lg:items-end">
-                                    <div id="docs-card-content" class="flex items-start gap-6 lg:flex-col">
-                                        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                            <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#FF2D20" d="M23 4a1 1 0 0 0-1.447-.894L12.224 7.77a.5.5 0 0 1-.448 0L2.447 3.106A1 1 0 0 0 1 4v13.382a1.99 1.99 0 0 0 1.105 1.79l9.448 4.728c.14.065.293.1.447.1.154-.005.306-.04.447-.105l9.453-4.724a1.99 1.99 0 0 0 1.1-1.789V4ZM3 6.023a.25.25 0 0 1 .362-.223l7.5 3.75a.251.251 0 0 1 .138.223v11.2a.25.25 0 0 1-.362.224l-7.5-3.75a.25.25 0 0 1-.138-.22V6.023Zm18 11.2a.25.25 0 0 1-.138.224l-7.5 3.75a.249.249 0 0 1-.329-.099.249.249 0 0 1-.033-.12V9.772a.251.251 0 0 1 .138-.224l7.5-3.75a.25.25 0 0 1 .362.224v11.2Z"/><path fill="#FF2D20" d="m3.55 1.893 8 4.048a1.008 1.008 0 0 0 .9 0l8-4.048a1 1 0 0 0-.9-1.785l-7.322 3.706a.506.506 0 0 1-.452 0L4.454.108a1 1 0 0 0-.9 1.785H3.55Z"/></svg>
-                                        </div>
+	<nav class="navbar">
+		<a href="#home"> Home </a>
+		<a href="#about"> About </a>
+		<a href="#products"> Products </a>
+		<a href="#review"> Review </a>
+		<a href="#contact"> Contact </a>
+	</nav>
+	
+	<div class="icons">
+		<a href="#" class="fas fa-heart"> </a>
+		<a href="#" class="fas fa-shopping-cart"> </a>
+		<a href="#" class="fas fa-user"> </a>
+	</div>
 
-                                        <div class="pt-3 sm:pt-5 lg:pt-0">
-                                            <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
+</header>
 
-                                            <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                            </p>
-                                        </div>
-                                    </div>
+<section class="home" id="home">
+	 <div class="content">
+	 <h3> handmade flowers </h3>
+	 <span> creative & beautiful flowers </span>
+	 <p>Each handmade flower we create is more than just a piece of art; it's a vibrant story told through delicate petals and rich colors. Crafted with love and passion, our flowers bring nature’s beauty to life, leaving an unforgettable impression on the hearts of those who receive them. </p>
+	 </div>
+</section>
 
-                                    <svg class="size-6 shrink-0 stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                                </div>
-                            </a>
+<section class="about" id="about">
+ <h1 class="heading"> <span> about </span> us </h1>
+ <div class="row">
+ 
+	<div class="video-container">
+		<video autoplay loop muted width="100%" height="auto">
+			<source src="/images/video.mp4" type="video/mp4">
+        </video>
+		<h3> best flowers</h3>
+	</div>
+	
+	<div class="content">
+		<h3> why choose us?</h3>
+		<p>1. Calitate și Unicitate
+La Timeless Flowers, fiecare floare este creată cu grijă și atenție la detalii, ceea ce face ca fiecare piesă să fie unică. Folosim doar cele mai bune materiale pentru a ne asigura că fiecare floare este de o calitate impecabilă, perfectă pentru a adăuga frumusețe și eleganță în orice moment special.
+		</p>
+		<p>2. Pasiune și Creativitate
+Fiecare floare este o operă de artizanat, născută din pasiunea noastră pentru frumusețea naturii. Îmbinăm tehnica și creativitatea pentru a aduce la viață flori care nu doar că încântă privirea, dar își lasă amprenta în inima celor care le primesc. Alege Timeless Flowers pentru a adăuga un strop de magie în fiecare moment special.
+		</p>
+		<p>3. Personalizare și Atenție la Detalii
+Credem că fiecare floare ar trebui să spună o poveste personală. De aceea, oferim opțiuni de personalizare pentru ca fiecare buchet să fie perfect adaptat preferințelor și nevoilor tale. La Timeless Flowers, ne dedicăm fiecărui detaliu, asigurându-ne că florile tale vor fi exact așa cum le-ai visat.
+		</p>
+		<p>4. Experiență Unică
+Alegerea florilor handmade înseamnă mai mult decât un simplu cadou. Este o experiență de neuitat. De la procesul de selecție până la livrare, ne asigurăm că fiecare pas este realizat cu grijă și respect față de client. Fiecare floare este o declarație de frumusețe, rafinament și emoție.
+		</p>
+		<p>5. Flori care Împărtășesc Momente Speciale
+Fiecare floare pe care o creăm este mai mult decât o simplă floare. Este un simbol al iubirii, al aprecierei și al momentelor speciale. Alege Timeless Flowers pentru a celebra momentele tale unice cu flori care spun povești. Fiecare petală reflectă pasiunea și dedicația noastră pentru artizanatul floristic. 
+		</p>
+		<a href="#" class="btn"> learn more </a>
+	</div>
+	
+</div>
+</section>
 
-                            <a
-                                href="https://laracasts.com"
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g fill="#FF2D20"><path d="M24 8.25a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v12a2.5 2.5 0 0 0 2.5 2.5h19a2.5 2.5 0 0 0 2.5-2.5v-12Zm-7.765 5.868a1.221 1.221 0 0 1 0 2.264l-6.626 2.776A1.153 1.153 0 0 1 8 18.123v-5.746a1.151 1.151 0 0 1 1.609-1.035l6.626 2.776ZM19.564 1.677a.25.25 0 0 0-.177-.427H15.6a.106.106 0 0 0-.072.03l-4.54 4.543a.25.25 0 0 0 .177.427h3.783c.027 0 .054-.01.073-.03l4.543-4.543ZM22.071 1.318a.047.047 0 0 0-.045.013l-4.492 4.492a.249.249 0 0 0 .038.385.25.25 0 0 0 .14.042h5.784a.5.5 0 0 0 .5-.5v-2a2.5 2.5 0 0 0-1.925-2.432ZM13.014 1.677a.25.25 0 0 0-.178-.427H9.101a.106.106 0 0 0-.073.03l-4.54 4.543a.25.25 0 0 0 .177.427H8.4a.106.106 0 0 0 .073-.03l4.54-4.543ZM6.513 1.677a.25.25 0 0 0-.177-.427H2.5A2.5 2.5 0 0 0 0 3.75v2a.5.5 0 0 0 .5.5h1.4a.106.106 0 0 0 .073-.03l4.54-4.543Z"/></g></svg>
-                                </div>
+<section class="icons-container">
 
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laracasts</h2>
+	<div class="icons">
+        <img src="/images/free delivery.png" alt="Free Delivery">
+		<div class="info">
+			<h3> free delivery </h3>
+			<span> on all orders </span>
+		</div>
+	</div>
+	
+	<div class="icons">
+        <img src="/images/save money.png" alt="Money Returns">
+		<div class="info">
+			<h3> 10 days returns </h3>
+			<span> moneyback guarantee </span>
+		</div>
+	</div>
+	
+	<div class="icons">
+        <img src="/images/gift box.png" alt="Gifts">
+		<div class="info">
+			<h3> offer & gifts </h3>
+			<span> on all orders </span>
+		</div>
+	</div>
+	
+	<div class="icons">
+        <img src="/images/credit-card.png" alt="Safe Payments">
+		<div class="info">
+			<h3> secure payments </h3>
+			<span> protected by revolut </span>
+		</div>
+	</div>
+	
+</section>
 
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                    </p>
-                                </div>
+<section class="products" id="products">
 
-                                <svg class="size-6 shrink-0 self-center stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                            </a>
+	<h1 class="heading"> latest <span> products </span> </h1>
+	<div class="box-container">
+		<div class="box">
+			<span class="discount"> -10% </span>
+			<div class="image">
+			<img src="/images/f1.jpg" alt="">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Pastel Freshness Bouquet </h3>
+				<div class="price"> 120 ron <span> 140 ron </span> </div>
+		    </div>
+	    </div>
+	
+	<div class="box">
+			<span class="discount"> -18% </span>
+			<div class="image">
+			<img src="/images/f2.jpg" alt="">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Magic of Spring Bouquet </h3>
+				<div class="price"> 130 ron <span> 150 ron </span> </div>
+		    </div>
+	    </div>
+		
+		
+		
+		<div class="box">
+			<span class="discount"> -10% </span>
+			<div class="image">
+			<img src="/images/f3.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Flower Euphoria Bouquet </h3>
+				<div class="price"> 80 ron <span> 100 ron </span> </div>
+		    </div>
+	    </div>
 
-                            <a
-                                href="https://laravel-news.com"
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g fill="#FF2D20"><path d="M8.75 4.5H5.5c-.69 0-1.25.56-1.25 1.25v4.75c0 .69.56 1.25 1.25 1.25h3.25c.69 0 1.25-.56 1.25-1.25V5.75c0-.69-.56-1.25-1.25-1.25Z"/><path d="M24 10a3 3 0 0 0-3-3h-2V2.5a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2V20a3.5 3.5 0 0 0 3.5 3.5h17A3.5 3.5 0 0 0 24 20V10ZM3.5 21.5A1.5 1.5 0 0 1 2 20V3a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 .5.5v17c0 .295.037.588.11.874a.5.5 0 0 1-.484.625L3.5 21.5ZM22 20a1.5 1.5 0 1 1-3 0V9.5a.5.5 0 0 1 .5-.5H21a1 1 0 0 1 1 1v10Z"/><path d="M12.751 6.047h2a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-2A.75.75 0 0 1 12 7.3v-.5a.75.75 0 0 1 .751-.753ZM12.751 10.047h2a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-2A.75.75 0 0 1 12 11.3v-.5a.75.75 0 0 1 .751-.753ZM4.751 14.047h10a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-10A.75.75 0 0 1 4 15.3v-.5a.75.75 0 0 1 .751-.753ZM4.75 18.047h7.5a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-7.5A.75.75 0 0 1 4 19.3v-.5a.75.75 0 0 1 .75-.753Z"/></g></svg>
-                                </div>
+	<div class="box">
+			<span class="discount"> -7% </span>
+			<div class="image">
+			<img src="/images/f4.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Springtime Radiance Bouquet </h3>
+				<div class="price"> 70 ron <span> 85 ron </span> </div>
+		    </div>
+	    </div>
+		
+		
+			<div class="box">
+			<span class="discount"> -23% </span>
+			<div class="image">
+			<img src="/images/f5.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Dreamy Blooms Bouquet </h3>
+				<div class="price"> 125 ron <span> 160 ron </span> </div>
+		    </div>
+	    </div>
+		
+		
+			<div class="box">
+			<span class="discount"> -17% </span>
+			<div class="image">
+			<img src="/images/f6.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Floral Sweetness Bouquet </h3>
+				<div class="price"> 110 ron <span> 125 ron </span> </div>
+		    </div>
+	    </div>
+		
+		
+			<div class="box">
+			<span class="discount"> -20% </span>
+			<div class="image">
+			<img src="/images/f7.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Harmony in Colors Bouquet </h3>
+				<div class="price"> 120 ron <span> 140 ron </span> </div>
+		    </div>
+	    </div>
+		
+		
+			<div class="box">
+			<span class="discount"> -8% </span>
+			<div class="image">
+			<img src="/images/f8.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> April Smiles Bouquet </h3>
+				<div class="price"> 130 ron <span> 140 ron </span> </div>
+		    </div>
+	    </div>
+		
+		
+			<div class="box">
+			<span class="discount"> -12% </span>
+			<div class="image">
+			<img src="/images/f9.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Garden Scent Bouquet </h3>
+				<div class="price"> 180 ron <span> 200 ron </span> </div>
+		    </div>
+	    </div>
+		
+		
+			<div class="box">
+			<span class="discount"> -5% </span>
+			<div class="image">
+			<img src="/images/f10.jpg" alt="Buchet Prospețime Pastelată">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn"> add to cart </a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3> Springtime Fairytale Bouquet </h3>
+				<div class="price"> 280 ron <span> 300 ron </span> </div>
+		    </div>
+	    </div>
+	</div>
 
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laravel News</h2>
+</section>
 
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                    </p>
-                                </div>
+<section class="review" id="review">
 
-                                <svg class="size-6 shrink-0 self-center stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                            </a>
+ <h1 class="heading"> customer's <span> review </span>  </h1>
+ 
+ <div class="box-container">
+	<div class="box">
+		<div class="stars">
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+		</div>
+		<p> 
+		Un buchet extraordinar! Am comandat pentru prima dată și sunt absolut încântat de calitatea florilor. Buchetul a ajuns impecabil. Recomand cu drag!
+		</p>
+		<div class="user">
+			<img src="/images/p1.jpg" alt="">
+			<div class="user-info">
+				<h3> Bita Simone</h3>
+				<span> happy costumer </span>
+		</div>
+	</div>
+	<span class="fas fa-quote-right"></span>
+ </div>
 
-                            <div class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]">
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                        <g fill="#FF2D20">
-                                            <path
-                                                d="M16.597 12.635a.247.247 0 0 0-.08-.237 2.234 2.234 0 0 1-.769-1.68c.001-.195.03-.39.084-.578a.25.25 0 0 0-.09-.267 8.8 8.8 0 0 0-4.826-1.66.25.25 0 0 0-.268.181 2.5 2.5 0 0 1-2.4 1.824.045.045 0 0 0-.045.037 12.255 12.255 0 0 0-.093 3.86.251.251 0 0 0 .208.214c2.22.366 4.367 1.08 6.362 2.118a.252.252 0 0 0 .32-.079 10.09 10.09 0 0 0 1.597-3.733ZM13.616 17.968a.25.25 0 0 0-.063-.407A19.697 19.697 0 0 0 8.91 15.98a.25.25 0 0 0-.287.325c.151.455.334.898.548 1.328.437.827.981 1.594 1.619 2.28a.249.249 0 0 0 .32.044 29.13 29.13 0 0 0 2.506-1.99ZM6.303 14.105a.25.25 0 0 0 .265-.274 13.048 13.048 0 0 1 .205-4.045.062.062 0 0 0-.022-.07 2.5 2.5 0 0 1-.777-.982.25.25 0 0 0-.271-.149 11 11 0 0 0-5.6 2.815.255.255 0 0 0-.075.163c-.008.135-.02.27-.02.406.002.8.084 1.598.246 2.381a.25.25 0 0 0 .303.193 19.924 19.924 0 0 1 5.746-.438ZM9.228 20.914a.25.25 0 0 0 .1-.393 11.53 11.53 0 0 1-1.5-2.22 12.238 12.238 0 0 1-.91-2.465.248.248 0 0 0-.22-.187 18.876 18.876 0 0 0-5.69.33.249.249 0 0 0-.179.336c.838 2.142 2.272 4 4.132 5.353a.254.254 0 0 0 .15.048c1.41-.01 2.807-.282 4.117-.802ZM18.93 12.957l-.005-.008a.25.25 0 0 0-.268-.082 2.21 2.21 0 0 1-.41.081.25.25 0 0 0-.217.2c-.582 2.66-2.127 5.35-5.75 7.843a.248.248 0 0 0-.09.299.25.25 0 0 0 .065.091 28.703 28.703 0 0 0 2.662 2.12.246.246 0 0 0 .209.037c2.579-.701 4.85-2.242 6.456-4.378a.25.25 0 0 0 .048-.189 13.51 13.51 0 0 0-2.7-6.014ZM5.702 7.058a.254.254 0 0 0 .2-.165A2.488 2.488 0 0 1 7.98 5.245a.093.093 0 0 0 .078-.062 19.734 19.734 0 0 1 3.055-4.74.25.25 0 0 0-.21-.41 12.009 12.009 0 0 0-10.4 8.558.25.25 0 0 0 .373.281 12.912 12.912 0 0 1 4.826-1.814ZM10.773 22.052a.25.25 0 0 0-.28-.046c-.758.356-1.55.635-2.365.833a.25.25 0 0 0-.022.48c1.252.43 2.568.65 3.893.65.1 0 .2 0 .3-.008a.25.25 0 0 0 .147-.444c-.526-.424-1.1-.917-1.673-1.465ZM18.744 8.436a.249.249 0 0 0 .15.228 2.246 2.246 0 0 1 1.352 2.054c0 .337-.08.67-.23.972a.25.25 0 0 0 .042.28l.007.009a15.016 15.016 0 0 1 2.52 4.6.25.25 0 0 0 .37.132.25.25 0 0 0 .096-.114c.623-1.464.944-3.039.945-4.63a12.005 12.005 0 0 0-5.78-10.258.25.25 0 0 0-.373.274c.547 2.109.85 4.274.901 6.453ZM9.61 5.38a.25.25 0 0 0 .08.31c.34.24.616.561.8.935a.25.25 0 0 0 .3.127.631.631 0 0 1 .206-.034c2.054.078 4.036.772 5.69 1.991a.251.251 0 0 0 .267.024c.046-.024.093-.047.141-.067a.25.25 0 0 0 .151-.23A29.98 29.98 0 0 0 15.957.764a.25.25 0 0 0-.16-.164 11.924 11.924 0 0 0-2.21-.518.252.252 0 0 0-.215.076A22.456 22.456 0 0 0 9.61 5.38Z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
 
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Vibrant Ecosystem</h2>
+<div class="box">
+		<div class="stars">
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+		</div>
+		<p> 
+Un cadou perfect!Am achiziționat acest buchet ca și cadou pentru mama mea și a fost foarte apreciat! Florile sunt superbe. Mulțumesc pentru serviciile excelente!		</p>
+		<div class="user">
+			<img src="/images/p2.jpg" alt="">
+			<div class="user-info">
+				<h3> Amalia Gabriela</h3>
+				<span> happy costumer </span>
+		    </div>
+	    </div>
+	<span class="fas fa-quote-right"></span>
+ </div>
+ 
+ <div class="box">
+		<div class="stars">
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+		</div>
+		<p> 
+ Cea mai bună alegere!Am comandat florile pentru o ocazie specială și nu am fost dezamăgită! Calitate excelentă, livrare rapidă și serviciu prietenos. Voi recomanda cu siguranță acest site tuturor prietenilor mei!"
+		</p>	
+		</p>
+		<div class="user">
+			<img src="/images/p3.jpg" alt="">
+			<div class="user-info">
+				<h3> Simireanu Marina</h3>
+				<span> happy costumer </span>
+		    </div>
+	    </div>
+	<span class="fas fa-quote-right"></span>
+	</div>
+ </div>
 
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white dark:focus-visible:ring-[#FF2D20]">Forge</a>, <a href="https://vapor.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Vapor</a>, <a href="https://nova.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Nova</a>, <a href="https://envoyer.io" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Envoyer</a>, and <a href="https://herd.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Herd</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Echo</a>, <a href="https://laravel.com/docs/horizon" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Telescope</a>, and more.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </main>
+</section>
 
-                    <footer class="py-16 text-center text-sm text-black dark:text-white/70">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </footer>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+<section class="contact" id="contact">
+	
+	<h1 class="heading"> <span> contact </span> us </h1>
+
+	<div class="row">
+		
+		<form action="">
+			<input type="text" placeholder="name" class="box">
+			<input type="email" placeholder="email" class="box">
+			<input type="number" placeholder="number" class="box">
+			<textarea name="" class="box" placeholder="message" id="" cols="30" rows="10">
+			</textarea>
+			<input type="submit" value="send message" class="btn">
+		</form>
+	    <div class="image">
+			<img src="/images/contact.avif" alt="">
+		</div>
+	
+</section>
+
+<section class="footer">
+
+	<div class="box-container">
+	<div class="box">
+		<h3> quick links </h3>
+		<a href="#"> home </a>
+		<a href="#"> about </a>
+		<a href="#"> products </a>
+		<a href="#"> review </a>
+		<a href="#"> contact </a>
+	</div>
+		
+	<div class="box">
+		<h3> extra links </h3>
+		<a href="#"> my account </a>
+		<a href="#"> my order </a>
+		<a href="#"> my favorite </a>
+	</div>
+		
+	<div class="box">
+		<h3> location </h3>
+		<a href="#"> Romania </a>
+	</div>
+		
+	<div class="box">
+		<h3> contact info </h3>
+		<a href="#"> 0720 798 649 </a>
+		<a href="#"> timelessflowers.ro@gmail.com </a>
+		<a href="#"> Pascani, Iasi - 705200 </a>
+		<img src="/images/card.png" alt="">
+	</div>
+	</div>
+	<div class="credit"> created by <span> Astefanoai Amalia Gabriela </span> | all rights reserved |
+	</div>
+</section>
+<style>
+    :root{
+	--pink:#e84393;
+}
+
+*{
+	margin:0; padding:0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	outline: none; border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: .2s linear;
+	
+}
+
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 6rem;
+	overflow-x: hidden;
+}
+
+section{
+	padding: 6rem 0;
+}
+
+.heading{
+	text-align: center;
+	font-size: 4rem;
+	color:#333;
+	padding: 1rem;
+	margin: 2rem 0;
+	background: rgba(255,51,153,.05);
+}
+
+.heading span{
+	color: var(--pink);
+}
+
+.btn{
+	display: inline-block;
+	margin-top: 1rem;
+	border-radius: 5rem;
+	background: #333;
+	color: #fff;
+	padding: .9rem 3.5rem;
+	cursor: pointer;
+	font-size: 1.7rem;
+}
+
+.btn:hover{
+	background:var(--pink);
+}
+
+header{
+	position:fixed;
+	top:0; left:0; right:0;
+	background:#fff;
+	padding:2rem 9%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	z-index: 1000;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+	font-size: 3rem;
+	color:#333;
+	font-weight: bolder;
+}
+
+header .logo span{
+	color:var(--pink);
+}
+
+header .navbar a{
+	font-size: 2rem;
+	padding: 0 1.5rem;
+	color:#666;
+}
+
+header .navbar a:hover{
+	color:var(--pink);
+}
+
+header .icons a{
+	font-size: 2.5rem;
+	color:#333;
+	margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+	color:var(--pink);
+}
+
+
+header #toggler:checked ~ .navbar{
+	display: block; 
+
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+	font-size: 3rem;
+	color: #333;
+	border-radius: .5rem;
+	padding: .5rem 1.5rem;
+	cursor: pointer;
+	border: 2px solid rgba(0,0,0,.3);
+	display: none;
+}
+
+.home{
+	display:flex;
+	align-items: center;
+	min-height: 100vh;
+    background-image: url('{{ asset("images/bkg.png") }}');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.home .content{
+  	max-width: 50rem;
+    padding: 2rem;
+}
+
+.home .content h3{
+	font-size: 6rem;
+	color: #aa3325;
+	font-family: 'Merriweather', serif;}
+
+.home .content span{
+	font-family: 'Merriweather', serif;
+	font-size: 3.5rem;
+	color:var(--pink);
+	padding: 1rem 0;
+	line-height: 1.5;
+}
+
+.home .content p{
+	font-family: 'Merriweather', serif;
+	font-size: 1.5rem;
+	color:#444;
+	padding:1rem 0;
+	line-height: 1.5;
+}
+
+.about .row{
+	display: flex;
+	align-items:center;
+	gap: 2rem;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+	padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+	flex: 1 1 40rem;
+	position: relative;
+}
+
+.about .row .video-container video{
+	width: 100%;
+	border: 1.5rem solid #fff;
+	border-radius: .5rem;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+	height: 100%;
+	object-fit: cover;
+}
+
+.about .row .video-container h3{
+	position: absolute;
+	top: 50%; transform : translateY(-50%);
+	font-size: 3rem;
+	background:#fff;
+	width : 100%;
+	padding: 1rem 2rem;
+	text-align: center;
+	mix-blend-mode: screen;
+	
+}
+
+.about .row .content{
+	flex:1 1 40rem;
+}
+
+.about .row .content h3{
+	font-size: 3rem;
+	color: #333;
+}
+
+.about .row .content p{
+	font-size: 1.5rem;
+	color: #999;
+	padding: .5rem 0;
+	padding-top: 1rem;
+	line-height: 1.5;
+	font-family: 'Merriweather', serif;
+}
+
+.icons-container{
+	background: #eee;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	justify-content: center; 
+
+	
+}
+
+.icons-container .icons{
+	background: #fff;
+	border: 1rem solid rgba(0,0,0, .1);
+	padding: 2rem;
+	display:flex;
+	align-items: center;
+	flex: 1 1 25rem;
+	max-width: 25%;
+	
+	
+}
+.icons-container .icons img {
+    width: 50px; 
+	height: auto;
+	margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+	color: #333;
+	padding-bottom: .5rem;
+	font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+	color: #555;
+	font-size: 1.3rem;
+}
+
+.products .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1.5rem;
+}
+
+.products .box-container .box{
+	flex: 1 1 30rem;
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	border-radius: .5rem;
+	border : .1rem solid rgba(0,0,0,.1);
+	position: relative;
+}
+
+.products .box-container .box .discount{
+	position: absolute;
+	top: 1rem; left:1rem;
+	padding:.7rem 1rem;
+	font-size: 2rem;
+	color: var(--pink);
+	background: rgba(255,51,153,.05);
+	z-index:1;
+	border-radius: .5rem;
+}
+
+.products .box-container .box .image{
+	position:relative;
+	text-align: center;
+	padding-top: 2rem;
+	overflow: hidden;
+}
+
+
+.products .box-container .box .image img {  /* corectăm selectorul */
+    width: 100%;  /* Face imaginea să se adapteze containerului */
+    max-width: 250px; /* Dimensiune maximă */
+    height: auto;  /* Păstrează proporțiile */
+    display: block;  /* Elimină spațiul alb sub imagine */
+    margin: 0 auto; /* Centrează imaginea */
+}
+}
+
+.products .box-container .box:hover .image .img{
+	transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons{
+	position: absolute;
+	bottom: -7rem ; left: 0; right: 0;
+	display:flex;
+}
+
+.products .box-container .box:hover .image .icons{
+	bottom:0;
+}
+
+.products .box-container .box .image .icons a{
+	height: 5rem;
+	line-height: 5rem;
+	font-size:  2rem;
+	width: 50%;
+	background: var(--pink);
+	color:#fff;
+}
+
+.products .box-container .box .image .icons .cart-btn{
+	border-left: .1rem solid #fff7;
+	border-right: .1rem solid #fff7;
+	width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover{
+	background:#333;
+}
+
+
+.products .box-container .box .content{
+	padding:2rem;
+	text-align: center;
+}
+
+.products .box-container .box .content h3{
+	font-size: 2.5rem;
+	color:#333;
+}
+
+.products .box-container .box .content .price{
+	font-size: 2.5rem;
+	color: var(--pink);
+	font-weight:bolder;
+	padding-top:1rem;
+}
+
+.products .box-container .box .content .price span{
+	font-size: 1.5rem;
+	color: #999;
+	font-weight: lighter;
+	text-decoration: line-through;
+}
+
+.review .box-container{
+	display: flex;
+	flex-wrap : wrap;
+	gap:1.5rem;	
+}
+
+.review .box-container .box{
+	flex:1 1 30rem;
+	box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+	border-radius: .5rem;
+	padding: 3rem 2rem;
+	position: relative;
+	border: 1rem solid rgba (0,0,0,.1);
+}
+
+.review .box-container .box .fa-quote-right{
+	position: absolute;
+	bottom: 3rem; right: 3rem;
+	font-size: 6rem;
+	color:#eee;
+}
+
+.review .box-container .box .stars i{
+	color:var(--pink);
+	font-size: 2rem;
+}
+
+.review .box-container .box p{
+	color:#999;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding-top: 2rem;
+}
+
+.review .box-container .box .user{
+	display:flex;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+.review .box-container .box .user  img{
+	height: 6rem;
+	width: 6rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 1rem;
+}
+
+.review .box-container .box .user h3{
+	font-size: 2rem;
+	color:#333; 
+}
+
+.review .box-container .box .user span{
+	font-size: 1.5rem;
+	color:#999;
+}
+
+.contact .row{
+	display:flex;
+	flex-wrap: wrap-reverse;
+	gap:1.5rem;
+	align-items: center;
+}
+
+.contact .row form{
+	flex: 1 1 40rem;
+	padding: 2rem 2.5rem;
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	border: 1rem solid rgba(0,0,0,.1);
+	background:#fff;
+	border-radius: .5rem;
+}
+
+.contact .row .image{
+	flex: 1 1 40rem;	
+}
+
+.contact .row .image img{
+	width:100%;	
+}
+
+.contact .row form .box{
+	padding: 1rem;
+	font-size: 1.7rem;
+	color:#333;
+	text-transform: none;
+	border: .1rem solid rgba(0,0,0,.1);
+	border-radius: .5rem;
+	margin: .7rem 0;
+	width:100%;
+}
+
+.contact .row form .box:focus{
+	border-color: var(--pink);
+}
+
+.contact .row form textarea{
+	height: 15rem;
+	resize: none;
+}
+
+
+.footer .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1.5rem;	
+	padding:10rem;
+}
+
+.footer .box-container .box{
+	flex:1 1 25rem;
+	align-items: center;
+    gap: 1rem; 
+}
+
+.footer .box-container .box h3{
+	color: #333;
+	font-size: 2.5rem;
+	padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+	display: block;
+	color: #666;
+	font-size: 1.5rem;
+	padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+	color:var(--pink);
+	text-decoration: underline;
+}
+
+.footer .box-container .box img {
+    width: 150px;  
+    height: auto; 
+    margin-top: 1rem;
+    display: block;
+}
+
+.footer .credit{
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 1.5rem;
+	padding-top: 2.5rem;
+	font-size: 2rem;
+	color: #333;
+	border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.footer .credit span{
+	color:var(--pink);
+}
+
+
+@media (max-width:991px)
+{
+	html{
+	  font-size: 55%;
+	}
+	header{
+		padding:2rem;
+	}
+	section{
+		padding:2rem;
+	}
+	.home{
+		background-position:center;
+	}
+}
+
+
+@media (max-width:768px)
+{
+	body {
+        font-size: 18px;
+    }
+	
+	header .fa-bars{
+		display: block;
+	}
+	
+	header .navbar{
+		position: absolute;
+		top:100%; left:0; right:0;
+		background: #eee;
+		border-top: .1rem solid rgba(0,0,0,.1);
+        display: block;
+		max-height: 0;
+		overflow: hidden;
+        transition: max-height 0.5s ease-in-out ;
+		
+	}
+	
+	#toggler:checked ~ .navbar {
+        max-height: 768px;
+    }
+	
+	header .navbar a{
+		margin: 1.5rem 0;
+		padding: 1.5rem;
+		background: #fff;
+		border: .3rem solid rgba(0,0,0,.1);
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+	
+	}
+	
+	#toggler:checked ~ .navbar a{
+	display: flex;
+	}
+	
+	.home .content h3{
+		font-size: 5rem;
+	}
+	
+	.home .content span{
+		font-size: 2.5rem;
+	}
+	
+	.icons-container .icons {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    .icons-container .icons img {
+        width: 40px;  
+    } 
+	
+	.icons-container .icons h3{
+	font-size: 2rem;
+	}
+
+	.icons-container .icons span{
+	font-size: 1.7rem;
+	}
+
+}
+  
+@media (max-width:450px)
+{
+	html{
+	  font-size: 50%;
+	}
+	.heading{
+		font-size: 3rem;
+	}
+}
+</style>
+</body>
+</html>	
