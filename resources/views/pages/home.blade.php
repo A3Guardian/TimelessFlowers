@@ -11,4 +11,5 @@
 @include('components.about')
 @include('components.products')
 @include('components.review')
+@include('layouts.partials.footer')
 @endsection

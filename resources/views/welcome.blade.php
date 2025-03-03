@@ -20,7 +20,7 @@
 		<a href="#" class="logo"> Timeless Flowers<span>.</span> </a>
 
 		<nav class="navbar">
-			<a href="#home"> Home </a>
+			<a href="#home"> Dashboard </a>
 			<a href="#about"> About </a>
 			<a href="#products"> Products </a>
 			<a href="#review"> Review </a>
@@ -28,7 +28,7 @@
 		</nav>
 
 		<div class="icons">
-			<a href="#" class="fas fa-heart"> </a>
+			<a href="#" class="fas fa-heart"></a>
 			<a href="#" class="fas fa-shopping-cart"> </a>
 			<a href="#" class="fas fa-user"> </a>
 		</div>

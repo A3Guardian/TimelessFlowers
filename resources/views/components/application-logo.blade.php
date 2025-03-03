@@ -1,0 +1,1 @@
+<div class="text-5xl font-bold text-gray-900 whitespace-nowrap">Timeless Flowers<span class="text-pink-500">.</span></div>
