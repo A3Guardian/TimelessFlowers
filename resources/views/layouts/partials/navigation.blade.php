@@ -26,7 +26,7 @@
         <x-dropdown align="right" width="48">
             <x-slot name="trigger">
                 <button class="inline-flex items-center text-gray-800 hover:text-pink-500">
-                    <a href="#" class="fas fa-user text-3xl"></a>
+                    <a href="" class="fas fa-user text-3xl"></a>
                 </button>
             </x-slot>
 

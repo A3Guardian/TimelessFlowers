@@ -6,11 +6,6 @@
             <span class="discount"> -10% </span>
             <div class="image">
                 <img src="/images/f1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn"> add to cart </a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
             </div>
             <div class="content">
                 <h3> Pastel Freshness Bouquet </h3>
@@ -22,11 +17,6 @@
             <span class="discount"> -18% </span>
             <div class="image">
                 <img src="/images/f2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn"> add to cart </a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
             </div>
             <div class="content">
                 <h3> Magic of Spring Bouquet </h3>
@@ -40,11 +30,6 @@
             <span class="discount"> -10% </span>
             <div class="image">
                 <img src="/images/f3.jpg" alt="Buchet Prospețime Pastelată">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn"> add to cart </a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
             </div>
             <div class="content">
                 <h3> Flower Euphoria Bouquet </h3>

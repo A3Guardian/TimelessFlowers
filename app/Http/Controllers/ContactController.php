@@ -18,6 +18,13 @@ class ContactController extends Controller
         $this->contactService = $contactService;
     }
 
+    public function index()
+    {
+        $contacts = Contact::all();
+        return view('admin.contacts.index', compact('contacts'));
+    }
+
+
     public function show()
     {
         return view('pages.contact.index');
