@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
@@ -16,21 +18,27 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::get('/', function () {
+    return view('pages.home');
+})->name('home');
 
 Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function () {
     Route::resource('users', UserController::class);
+    Route::resource('products', ProductController::class);
     Route::get('/contacts', [ContactController::class, 'index'])->name('contacts');
 });
 
 Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
-
 Route::prefix('shop')->name('shop.')->group(function () {
-    Route::get('/', function () {
-        return view('pages.shop.index');
-    })->name('index');
+    Route::get('/', [ProductController::class, 'shop'])->name('index');
+    Route::get('/{id}', [ProductController::class, 'show'])->name('show');
 });
+
+Route::post('/orders', [OrderController::class, 'store']);
+Route::get('/orders/{order}', [OrderController::class, 'show']);
+Route::patch('/orders/{order}/status', [OrderController::class, 'updateStatus']);
 
 Route::get('/email/verify', function () {
     return view('auth.verify-email');

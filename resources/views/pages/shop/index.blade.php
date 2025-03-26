@@ -2,127 +2,73 @@
 
 @section('content')
 <section class="products" id="products">
-
     <h1 class="heading"> <span> shop </span> </h1>
     <div class="box-container">
-        <div class="box">
-            <span class="discount"> -10% </span>
+        @foreach ($products as $product)
+        <div class="box cursor-pointer" onclick='openProductModal(@json($product))'>
+            <span class="discount z-10"> -{{ rand(5, 25) }}% </span>
             <div class="image">
-                <img src="/images/f1.jpg" alt="">
+                <img src="{{ asset($product->image_path) }}" alt="{{ $product->name }}">
             </div>
             <div class="content">
-                <h3> Pastel Freshness Bouquet </h3>
-                <div class="price"> 120 ron <span> 140 ron </span> </div>
+                <h3>{{ $product->name }}</h3>
+                <div class="price">{{ $product->price }} RON <span>{{ $product->price * 1.2 }} RON</span></div>
             </div>
         </div>
-
-        <div class="box">
-            <span class="discount"> -18% </span>
-            <div class="image">
-                <img src="/images/f2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3> Magic of Spring Bouquet </h3>
-                <div class="price"> 130 ron <span> 150 ron </span> </div>
-            </div>
-        </div>
-
-
-
-        <div class="box">
-            <span class="discount"> -10% </span>
-            <div class="image">
-                <img src="/images/f3.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> Flower Euphoria Bouquet </h3>
-                <div class="price"> 80 ron <span> 100 ron </span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount"> -7% </span>
-            <div class="image">
-                <img src="/images/f4.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> Springtime Radiance Bouquet </h3>
-                <div class="price"> 70 ron <span> 85 ron </span> </div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <span class="discount"> -23% </span>
-            <div class="image">
-                <img src="/images/f5.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> Dreamy Blooms Bouquet </h3>
-                <div class="price"> 125 ron <span> 160 ron </span> </div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <span class="discount"> -17% </span>
-            <div class="image">
-                <img src="/images/f6.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> Floral Sweetness Bouquet </h3>
-                <div class="price"> 110 ron <span> 125 ron </span> </div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <span class="discount"> -20% </span>
-            <div class="image">
-                <img src="/images/f7.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> Harmony in Colors Bouquet </h3>
-                <div class="price"> 120 ron <span> 140 ron </span> </div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <span class="discount"> -8% </span>
-            <div class="image">
-                <img src="/images/f8.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> April Smiles Bouquet </h3>
-                <div class="price"> 130 ron <span> 140 ron </span> </div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <span class="discount"> -12% </span>
-            <div class="image">
-                <img src="/images/f9.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> Garden Scent Bouquet </h3>
-                <div class="price"> 180 ron <span> 200 ron </span> </div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <span class="discount"> -5% </span>
-            <div class="image">
-                <img src="/images/f10.jpg" alt="Buchet Prospețime Pastelată">
-            </div>
-            <div class="content">
-                <h3> Springtime Fairytale Bouquet </h3>
-                <div class="price"> 280 ron <span> 300 ron </span> </div>
-            </div>
-        </div>
+        @endforeach
     </div>
-
 </section>
+
+@include('pages.shop.partials.product-modal')
+
+@endsection
+
+@section('scripts')
+<script>
+    function openProductModal(product) {
+        document.getElementById("modalTitle").innerText = product.name;
+        document.getElementById("modalDescription").innerText = product.description;
+        document.getElementById("modalPrice").innerText = product.price + " RON";
+
+        const baseUrl = "{{ asset('') }}";
+        document.getElementById("modalImage").src = product.image_path.startsWith('http') ? product.image_path : baseUrl + product.image_path;
+
+        const addToCartButton = document.getElementById("addToCart");
+        addToCartButton.dataset.product = JSON.stringify({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            image: product.image_path.startsWith('http') ? product.image_path : baseUrl + product.image_path,
+            quantity: 1
+        });
+
+        document.getElementById("productModal").classList.remove("hidden");
+    }
+
+    function closeModal(event) {
+        if (event.target.id === "productModal") {
+            document.getElementById("productModal").classList.add("hidden");
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("addToCart").addEventListener("click", function() {
+            const product = JSON.parse(this.dataset.product);
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            let existingProduct = cart.find(item => item.id === product.id);
+            if (existingProduct) {
+                existingProduct.quantity += 1;
+            } else {
+                cart.push(product);
+            }
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("Product added to cart!");
+            window.location.reload()
+        });
+    });
+</script>
 @endsection

@@ -18,17 +18,25 @@
             <ul>
                 <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
                 <li><a href="{{ route('admin.users.index') }}">Manage Users</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="{{ route('admin.products.index') }}">Manage Products</a></li>
                 <li><a href="{{ route('admin.contacts') }}">Contact Submissions</a></li>
+                <li><a href="#">Settings</a></li>
             </ul>
         </div>
 
         <!-- Content Area -->
         <div class="flex-1 flex flex-col">
             <!-- Top Navigation -->
-            <div class="navbar flex justify-content-end align-items-end">
+            <div class="navbar flex justify-content-end align-items-end text-red-500">
                 <div>
-                    <a href="{{ route('logout') }}" class="text-red-500">Logout</a>
+                    @if(Auth::check())
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <x-dropdown-link :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
+                            {{ __('Log Out') }}
+                        </x-dropdown-link>
+                    </form>
+                    @endif
                 </div>
             </div>
 

@@ -20,8 +20,8 @@
 
     <!-- User Menu -->
     <div class="flex items-center space-x-4">
-        <a href="#" class="fas fa-heart text-3xl text-gray-800 hover:text-pink-500"></a>
-        <a href="#" class="fas fa-shopping-cart text-3xl text-gray-800 hover:text-pink-500"></a>
+        <!-- <a href="#" class="fas fa-heart text-3xl text-gray-800 hover:text-pink-500"></a> -->
+        <a href="#" class="fas fa-shopping-cart text-3xl text-gray-800 hover:text-pink-500" onclick="toggleCartDrawer()"></a>
 
         <x-dropdown align="right" width="48">
             <x-slot name="trigger">

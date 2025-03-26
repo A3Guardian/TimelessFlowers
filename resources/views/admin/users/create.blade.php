@@ -11,10 +11,6 @@
             <input type="text" name="name" class="w-full border px-4 py-2" required>
         </div>
         <div class="mb-4">
-            <label class="block">Email</label>
-            <input type="email" name="email" class="w-full border px-4 py-2" required>
-        </div>
-        <div class="mb-4">
             <label class="block">Password</label>
             <input type="password" name="password" class="w-full border px-4 py-2" required>
         </div>

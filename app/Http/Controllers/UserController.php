@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewUserMail;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
@@ -22,18 +24,21 @@ class UserController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
         ]);
 
-        User::create([
+        $plainPassword = $validated['password'];
+
+        $user = User::create([
             'name' => $validated['name'],
-            'email' => $validated['email'],
-            'password' => bcrypt($validated['password']),
+            'password' => bcrypt($plainPassword),
         ]);
 
-        return redirect()->route('admin.users.index')->with('success', 'User created successfully!');
+        Mail::to($user->email)->send(new NewUserMail($user, $plainPassword));
+
+        return redirect()->route('admin.users.index')->with('success', 'User created successfully and email sent!');
     }
+
 
     public function edit(User $user)
     {
