@@ -13,10 +13,6 @@
             <input type="text" name="name" class="w-full border px-4 py-2" value="{{ $user->name }}" required>
         </div>
         <div class="mb-4">
-            <label class="block">Email</label>
-            <input type="email" name="email" class="w-full border px-4 py-2" value="{{ $user->email }}" required>
-        </div>
-        <div class="mb-4">
             <label class="block">Password (leave blank to keep current)</label>
             <input type="password" name="password" class="w-full border px-4 py-2">
         </div>

@@ -49,13 +49,11 @@ class UserController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email,' . $user->id,
             'password' => 'nullable|min:6',
         ]);
 
         $user->update([
             'name' => $validated['name'],
-            'email' => $validated['email'],
             'password' => $validated['password'] ? bcrypt($validated['password']) : $user->password,
         ]);
 

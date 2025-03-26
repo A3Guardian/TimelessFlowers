@@ -157,10 +157,10 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    alert("Order placed successfully! Our team will contact you!");
+                    toggleOrderModal();
                     localStorage.removeItem("cart");
                     updateCartUI();
-                    toggleOrderModal();
+                    alert("Order placed successfully! Our team will contact you!");
                 })
                 .catch(error => console.error("Error:", error));
         }

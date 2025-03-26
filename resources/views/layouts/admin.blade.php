@@ -19,8 +19,9 @@
                 <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
                 <li><a href="{{ route('admin.users.index') }}">Manage Users</a></li>
                 <li><a href="{{ route('admin.products.index') }}">Manage Products</a></li>
+                <li><a href="{{ route('admin.orders.index') }}">Manage Orders</a></li>
                 <li><a href="{{ route('admin.contacts') }}">Contact Submissions</a></li>
-                <li><a href="#">Settings</a></li>
+                <!-- <li><a href="#">Settings</a></li> -->
             </ul>
         </div>
 

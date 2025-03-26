@@ -25,6 +25,7 @@ Route::get('/', function () {
 Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function () {
     Route::resource('users', UserController::class);
     Route::resource('products', ProductController::class);
+    Route::resource('orders', OrderController::class);
     Route::get('/contacts', [ContactController::class, 'index'])->name('contacts');
 });
 
